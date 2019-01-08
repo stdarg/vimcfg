@@ -46,9 +46,9 @@ set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 
 " Set up syntastic checkers here
-let g:syntastic_javascript_checkers = ['jshint']
-let g:syntastic_json_checkers = ['jsonval']
-let g:syntastic_python_checkers = ['flake8']
+let g:syntastic_javascript_checkers = ['jshint', 'eslint']
+let g:syntastic_json_checkers = ['jsonlint']
+let g:syntastic_python_checkers = ['flake8', 'pylint' ]
 
 highlight SyntasticWarningSign ctermfg=white ctermbg=black
 highlight SyntasticErrorLine ctermbg=red ctermbg=black
